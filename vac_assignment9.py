@@ -24,3 +24,11 @@ def duplicateZeros(arr: list[int]) -> list[int]:
         if i == 0:
             result.append(0)
     return result[:len(arr)]
+
+# Q4 shuffle the array
+def shuffleArray(arr: list[int], n: int) -> list[int]:
+    result = []
+    for i in range(n):
+        result.append(arr[i])
+        result.append(arr[i+n])
+    return result
